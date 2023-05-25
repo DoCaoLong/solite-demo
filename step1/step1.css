@@ -1,0 +1,74 @@
+.intro-page {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .intro-page {
+    background: url(../imgs/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  @supports not (height: 100dvh) {
+    .intro-Page {
+      height: 100vh;
+    }
+  }
+  .intro-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    height: 100%;
+    margin-bottom: 40px;
+    z-index: 2;
+  }
+  .intro-logo {
+    width: 250px;
+  }
+  .intro-middle {
+    margin: 30px 0 0 0;
+  }
+  .intro-arrow {
+    width: 36px;
+    margin-top: 14px;
+    animation: mover 1s infinite alternate;
+  }
+  .intro-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .intro-btn {
+    margin-bottom: 24px;
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro-logo {
+    width: 180px;
+  }
+  .intro-top {
+    gap: 0;
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

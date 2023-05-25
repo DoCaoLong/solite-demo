@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infor Customer</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./step2.css">
+</head>
+
+<body>
+  <div class="info-page">
+    <div class="info-top">
+      <div class="info-logo">
+        <img src="../imgs/logo.png" alt="">
+      </div>
+      <div class="info-title">
+        <img src="../imgs/info-customer.png" alt="">
+      </div>
+      <form action="#" class="form-info">
+        <div class="wrap-input">
+          <input autocomplete="off" placeholder="Họ và tên (*):" id="user" class="user" type="text">
+          <p class="error-text ">Vui lòng nhập họ và tên</p>
+        </div>
+        <div class="wrap-input">
+          <input autocomplete="off" placeholder="Số điện thoại (*):" id="phone" class="phone gradient" type="number">
+          <p class="error-text ">Vui lòng nhập số điện thoại</p>
+        </div>
+        <div class="wrap-input">
+          <input autocomplete="off" placeholder="CCCD (*):" id="cccd" class="cccd" type="number">
+          <p class="error-text ">Vui lòng nhập CCCD</p>
+        </div>
+      </form>
+      <p class="text-info">Ghi chú: <br />
+        <span class="text-info__small">Quý khách vui lòng nhập CCCD/CMND để có cơ hội trúng </span> Tủ lạnh Elextrolux
+        Inverter 308L <span class="text-info__small">từ Solite</span>
+      </p>
+      <button class="btn-login" onclick="handleSubmit()" type="button"><img src="../imgs/btn-next.png" alt=""></button>
+    </div>
+    <div class="info-bottom">
+      <img src="../imgs/bottom-qr.png" alt="">
+    </div>
+  </div>
+  <script src="./step2.js"></script>
+</body>
+
+</html>

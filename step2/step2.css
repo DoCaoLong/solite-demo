@@ -1,0 +1,183 @@
+.info-page {
+  display: none;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .info-page {
+    background: url(../imgs/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: scroll;
+  }
+  @supports not (height: 100dvh) {
+    .info-Page {
+      height: 100vh;
+    }
+  }
+  .info-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .info-logo {
+    width: 180px;
+  }
+  .info-title {
+    width: calc(100% - 48px);
+  }
+  .form-info {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 48px);
+    gap: 36px;
+  }
+  .info-page .wrap-input {
+    position: relative;
+  }
+  .info-page .error-text {
+    position: absolute;
+    top: 44px;
+    left: 0;
+  }
+  .info-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .text-info {
+    font-size: 12px;
+    display: inline-block;
+    color: #335577;
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: calc(100% - 48px);
+    margin-top: 14px;
+    z-index: 10;
+  }
+  .text-info__small {
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .btn-info {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-logo {
+    width: 120px;
+  }
+  .info-title {
+    width: 60%;
+  }
+  .form-info {
+    gap: 28px;
+  }
+  .info-top {
+    gap: 18px;
+  }
+  .info-page .error-text {
+    font-size: 12px;
+    top: 40px;
+  }
+  .btn-login {
+    width: 34%;
+  }
+  .text-info {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .info-logo {
+    width: 100px;
+  }
+  input {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+  .form-info {
+    gap: 24px;
+  }
+  .info-page .error-text {
+    top: 40px;
+    font-size: 10px;
+  }
+  .btn-login {
+    margin-top: 0px;
+  }
+  input::placeholder {
+    font-size: 12px;
+  }
+  .text-info {
+    font-size: 10px;
+  }
+}
+@media screen and (max-height: 667px) {
+  .info-page {
+    height: 100vh;
+  }
+  
+  .wrap-input input {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .info-page .error-text {
+    font-size: 12px;
+    top: 30px;
+  }
+  .wrap-input input::placeholder{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .info-logo {
+    width: 80px;
+  }
+  .info-top {
+    gap: 14px;
+  }
+  .info-page .error-text{
+    font-size: 10px;
+    top: 28px;
+  }
+}
+@media screen and (max-height: 480px) {
+  .info-logo {
+    width: 70px;
+  }
+  .text-info,
+  .text-info__small {
+    font-size: 8px;
+  }
+  .text-info {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  .info-title {
+    width: 50%;
+  }
+  .form-info {
+    gap: 20px;
+  }
+  .info-page .error-text {
+    top: 28px;
+  }
+  .btn-login {
+    width: 30%;
+  }
+}

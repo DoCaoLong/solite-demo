@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheel</title>
+  <link rel="stylesheet" href="../css/wheel-option1.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./step3.css">
+</head>
+
+<body>
+  <div class="wheel-page">
+    <div class="wheel-top">
+      <div class="wheel-logo">
+        <img src="../imgs/logo.png" alt="">
+      </div>
+      <img class="wheel-title" src="../imgs/wheel-title.png" alt="">
+      <!-- wheel -->
+      <div class="congratulation">
+        <div class="congratulation__container">
+          <div id="congratulation__result"></div>
+          <div id="congratulation-1" class="congratulation-content">
+            <div class="bg-gift img-locklock">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-locklock">
+                  <img src="../imgs/locklock.png" alt="">
+                </div>
+                <div class="congratulation-btn">
+                  <img src="../imgs/btn-locklock.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+            </div>
+          </div>
+          <div id="congratulation-2" class="congratulation-content">
+            <div class="bg-gift img-bag">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-bag">
+                  <img src="../imgs/bag.png" alt="">
+                </div>
+                <div class="congratulation-btn cus-btn__bag">
+                  <img src="../imgs/btn-bag.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-3" class="congratulation-content">
+            <div class="bg-gift img-minion">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-minion">
+                  <img src="../imgs/minion.png" alt="">
+                </div>
+                <div class="congratulation-btn cus-btn__minion">
+                  <img src="../imgs/btn-minion.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-4" class="congratulation-content">
+            <div class="bg-gift img-cake">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-cake">
+                  <img src="../imgs/cake.png" alt="">
+                </div>
+                <div class="congratulation-btn">
+                  <img src="../imgs/btn-cake.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-5" class="congratulation-content">
+            <div class="bg-gift img-cake">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-cake">
+                  <img src="../imgs/cake.png" alt="">
+                </div>
+                <div class="congratulation-btn">
+                  <img src="../imgs/btn-cake.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-6" class="congratulation-content">
+            <div class="bg-gift img-locklock">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-locklock">
+                  <img src="../imgs/locklock.png" alt="">
+                </div>
+                <div class="congratulation-btn">
+                  <img src="../imgs/btn-locklock.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-7" class="congratulation-content">
+            <div class="bg-gift img-bag">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-bag">
+                  <img src="../imgs/bag.png" alt="">
+                </div>
+                <div class="congratulation-btn cus-btn__bag">
+                  <img src="../imgs/btn-bag.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-8" class="congratulation-content">
+            <div class="bg-gift img-cake">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <div class="gift-item">
+                <div class="congratulation-logo">
+                  <img src="../imgs/logo.png" alt="">
+                </div>
+                <div class="congratulation-title">
+                  <img src="../imgs/congratulation-final.png" alt="">
+                </div>
+                <div class="congratulation-items cus-cake">
+                  <img src="../imgs/cake.png" alt="">
+                </div>
+                <div class="congratulation-btn">
+                  <img src="../imgs/btn-cake.png" alt="">
+                </div>
+              </div>
+              <div class="firework">
+                <lottie-player id="lottiePlayer" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"
+                  background="transparent" speed="1" style="width: 100%; height: 100%" autoplay></lottie-player>
+              </div>
+              <div class="congratulation-bottom">
+                <img src="../imgs/bottom-cong.png" alt="">
+              </div>
+              <form class="take-screen" action="#">
+                <label for="image" class="file-upp input-row">
+                  <div class="input">
+                    <input onchange="upload()" id="image" type="file" accept="image/*" name="image"
+                      placeholder="Vui lòng hoàn thành bước chụp ảnh" />
+                  </div>
+                  <div class="ic-camera">
+                    <img src="../imgs/photo-camera.png" alt="">
+                  </div>
+                </label>
+                <span class="filupp-file-name js-value">Vui lòng hoàn thành bước chụp ảnh</span>
+              </form>
+              <div class="loading">
+                <div class="loading-img">
+                  <img src="../imgs/wheel1.png" alt="">
+                  <p>Đang tải</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="congratulation-9" class="congratulation-content">
+            <div onclick="back_error()" class="error">
+              <div onclick="back()" class="btn-back">
+                <img src="../imgs/arrow-left.png" alt="">
+              </div>
+              <p>Lỗi... <br>Chạm vào màn hình để quay lại!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="luckywheel" class="hc-luckywheel">
+        <img class="wheel-arrown" src="../imgs/arr-wheel.png" alt="">
+        <div class="hc-luckywheel-container">
+          <canvas class="hc-luckywheel-canvas" width="460px" height="460px">Vòng Xoay May Mắn</canvas>
+        </div>
+      </section>
+      <!-- close wheel -->
+      <a href="javascript:void(0)" class="hc-luckywheel-btn">
+        <img style="pointer-events: none;" src="../imgs/btn-quay.png" alt="">
+      </a>
+    </div>
+    <div class="whell-bottom">
+      <img src="../imgs/bottom-qr.png" alt="">
+    </div>
+  </div>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="../js/wheel.js"></script>
+  <script src="./step3.js"></script>
+</body>
+
+</html>

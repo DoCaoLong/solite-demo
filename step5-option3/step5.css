@@ -1,0 +1,489 @@
+.wheel-page {
+  display: none;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .wheel-page {
+    background: url(../imgs/bg-login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  /* @supports not (height: 100dvh) {
+    .wheel-Page {
+      height: 100vh;
+    }
+  } */
+  .wheel-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .wheel-logo {
+    width: 160px;
+  }
+
+  .wheel-title {
+    width: 85%;
+  }
+
+  .congratulation {
+    display: none;
+    z-index: 10;
+  }
+
+  .congratulation-content {
+    display: none;
+  }
+
+  #congratulation__result .congratulation-content {
+    display: block;
+  }
+
+  #congratulation__result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .wheel-arrown {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 40px;
+  }
+
+  .whell-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .congratulation-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .img-vali {
+    background: url(../imgs/bg-locklock-master.png);
+  }
+
+  .img-box {
+    background: url(../imgs/bg-locklock-master.png);
+  }
+
+  .img-bag {
+    background: url(../imgs/bg-locklock-master.png);
+  }
+
+  .img-cake {
+    background: url(../imgs/bg-locklock-master.png);
+  }
+
+  .bg-gift {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100%;
+    height: 100dvh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  @supports not (height: 100dvh) {
+    .bg-gift {
+      height: 100vh;
+    }
+  }
+  .firework {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -5%) scale(1.5);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 31;
+  }
+
+  .gift-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    background: url(../imgs/bg-locklock-master.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .congratulation-logo {
+    width: 40%;
+  }
+
+  .congratulation-btn {
+    margin-top: 50px;
+    z-index: 12;
+    width: 70%;
+  }
+
+  .congratulation-items {
+    width: 20%;
+    animation: aniscale 2s infinite;
+    z-index: 30;
+  }
+
+  .cus-cake {
+    width: 50%;
+    margin-top: 60px;
+  }
+
+  .cus-locklock {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .cus-bag {
+    width: 33%;
+  }
+  .cus-box {
+    margin-top: 60px;
+    width: 60%;
+  }
+
+  .cus-vali {
+    width: 35%;
+    margin-top: 30px;
+  }
+
+  .cus-btn__vali {
+    margin-top: 60px;
+  }
+  .cus-btn__box {
+    width: 70%;
+  }
+
+  .congratulation-title {
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%);
+    -moz-filter: saturate(100%);
+    animation: anifilter 1s infinite;
+    width: 80%;
+  }
+  .btn-back {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    padding: 10px;
+    flex-shrink: 0;
+    pointer-events: fill;
+  }
+  .btn-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .wheel-logo {
+    width: 140px;
+  }
+  .cus-cake {
+    width: 38%;
+  }
+
+  .wheel-title {
+    width: 60%;
+  }
+
+  .hc-luckywheel {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hc-luckywheel-btn {
+    width: 40%;
+  }
+
+  .hc-luckywheel:before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .wheel-arrown {
+    top: -11%;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .wheel-logo {
+    width: 100px;
+  }
+
+  .wheel-title {
+    width: 60%;
+  }
+
+  .hc-luckywheel {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hc-luckywheel:before {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .congratulation-logo {
+    width: 120px;
+  }
+
+  .congratulation-title {
+    width: 80%;
+  }
+
+  .cus-cake {
+    margin-top: 20px;
+  }
+
+  .congratulation-btn {
+    margin-top: 60px;
+    width: 80%;
+  }
+
+  .cus-btn__bag {
+    margin-top: 40px !important;
+  }
+}
+
+@keyframes aniscale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes anifilter {
+  0% {
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%);
+    -moz-filter: saturate(100%);
+  }
+
+  50% {
+    filter: saturate(200%);
+    -webkit-filter: saturate(200%);
+    -moz-filter: saturate(200%);
+  }
+
+  100% {
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%);
+    -moz-filter: saturate(100%);
+  }
+}
+
+@media only screen and (max-height: 737px) {
+  .congratulation-logo {
+    width: 30%;
+  }
+  .congratulation-title {
+    width: 90%;
+  }
+  .cus-vali {
+    width: 28%;
+  }
+  .cus-cake {
+    margin-top: 44px;
+    width: 36%;
+  }
+  .cus-bag {
+    width: 30%;
+  }
+  .cus-box {
+    width: 40%;
+    margin-top: 40px;
+  }
+  .congratulation-btn {
+    margin-top: 60px;
+    width: 70%;
+  }
+}
+
+
+@media only screen and (max-height: 676px) {
+  .wheel-page {
+    height: 100vh;
+  }
+  .hc-luckywheel {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hc-luckywheel:before {
+    width: 220px;
+    height: 220px;
+  }
+  .congratulation-logo {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-height: 736px) {
+  .wheel-logo{
+    width: 120px;
+  }
+
+  .cus-locklock {
+    width: 16%;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-height: 667px) {
+  .cus-locklock {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .cus-btn__box {
+    margin-top: 20px;
+  }
+  .cus-box {
+    margin-top: 40px;
+  }
+  .gift-item {
+    gap: 14px;
+  }
+}
+
+@media only screen and (max-height: 568px) {
+  .cus-locklock {
+    margin-top: 30px;
+  }
+  .congratulation-btn {
+    margin-top: 40px;
+    width: 70%;
+  }
+  .file-upp {
+    gap: 8px;
+  }
+  .filupp-file-name {
+    font-size: 10px;
+  }
+  .cus-box {
+    margin-top: 30px;
+    width: 50%;
+  }
+  .cus-vali {
+    margin-top: 10px;
+    width: 32%;
+  }
+  .btn-back {
+    width: 40px;
+    height: 40px;
+  }
+  .ic-camera {
+    width: 24px;
+  }
+  .bg-gift {
+    overflow: scroll;
+  }
+}
+@media only screen and (max-height: 480px) {
+  .wheel-logo {
+    width: 80px;
+  }
+  .wheel-title {
+    width: 50%;
+  }
+  .hc-luckywheel {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hc-luckywheel:before {
+    width: 180px;
+    height: 180px;
+  }
+  .hc-luckywheel-btn {
+    width: 30%;
+  }
+  .congratulation-logo {
+    width: 80px;
+  }
+  .congratulation-title {
+    width: 70%;
+  }
+  .gift-item {
+    gap: 14px;
+  }
+  .btn-back {
+    width: 40px;
+    height: 40px;
+  }
+  .congratulation-btn {
+    width: 60%;
+  }
+  .cus-cake {
+    width: 40%;
+  }
+  .ic-camera {
+    width: 24px;
+  }
+  .cus-locklock {
+    margin-top: 10px;
+  }
+}

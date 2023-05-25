@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./login/login.css">
+  <title>Login</title>
+</head>
+<div class="login-Page">
+  <div class="login-top">
+    <div class="login-logo">
+      <img src="./imgs/logo.png" alt="">
+    </div>
+    <img class="login-title" src="./imgs/login-title.png" alt="">
+    <form action="#" class="form-login">
+      <div class="wrap-input">
+        <label class="label-input" for="user">Tên đăng nhập:</label>
+        <input autocomplete="off" id="user" class="user" type="text">
+        <p class="error-text ">Vui lòng nhập tài khoản</p>
+      </div>
+      <div class="wrap-input">
+        <label class="label-input" for="pass">Mật khẩu:</label>
+        <input autocomplete="off" id="pass" class="pass gradient" type="text">
+        <p class="error-text ">Vui lòng nhập mật khẩu</p>
+      </div>
+      <button class="btn-login" onclick="login()" type="button"><img src="./imgs/login-btn.png" alt=""></button>
+    </form>
+  </div>
+  <div class="login-bottom">
+    <img src="./imgs/bottom-qr.png" alt="">
+  </div>
+</div>
+
+<body>
+  <script src="./login/login.js"></script>
+</body>
+
+</html>
