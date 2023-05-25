@@ -118,11 +118,11 @@
     align-items: flex-start;
     justify-content: center;
   }
-  @supports not (height: 100vh) {
+  /* @supports not (height: 100vh) {
     .bg-gift {
       height: 100vh;
     }
-  }
+  } */
   .firework {
     position: absolute;
     top: 0;
