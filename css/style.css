@@ -179,7 +179,7 @@ body {
   pointer-events: none;
 }
 .take-screen {
-  position: absolute;
+  position: fixed;
   bottom: 24px;
   display: flex;
   flex-direction: row-reverse;
