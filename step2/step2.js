@@ -1,7 +1,7 @@
 const inputEles = document.querySelectorAll(".wrap-input");
 const usernameEle = document.getElementById("user");
 const phoneEle = document.getElementById("phone");
-const cccdEle = document.getElementById("cccd");
+// const cccdEle = document.getElementById("cccd");
 
 function handleSubmit() {
   console.log("ok");
@@ -10,14 +10,14 @@ function handleSubmit() {
   // handle submit
   if (isValid) {
     console.log(isValid);
-    window.location.pathname = "step3-option1/step3.html";
+    window.location.pathname = "step5-option3/step5.html";
   }
   return isValid;
 }
 function checkValidate() {
   let usernameValue = usernameEle.value;
   let phoneValue = phoneEle.value;
-  let cccdValue = cccdEle.value;
+  // let cccdValue = cccdEle.value;
   let isCheck = true;
 
   if (usernameValue == "") {
@@ -26,12 +26,12 @@ function checkValidate() {
   } else {
     setSuccess(usernameEle);
   }
-  if (cccdValue == "") {
-    setError(cccdEle, "Số CCCD không được để trống");
-    isCheck = false;
-  } else {
-    setSuccess(cccdEle);
-  }
+  // if (cccdValue == "") {
+  //   setError(cccdEle, "Số CCCD không được để trống");
+  //   isCheck = false;
+  // } else {
+  //   setSuccess(cccdEle);
+  // }
 
   if (phoneValue == "") {
     setError(phoneEle, "Số điện thoại không được để trống");
