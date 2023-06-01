@@ -10,7 +10,7 @@ function handleSubmit() {
   // handle submit
   if (isValid) {
     console.log(isValid);
-    window.location.pathname = "step5-option3/step5.html";
+    window.location.pathname = "step3-option1/step3.html";
   }
   return isValid;
 }
